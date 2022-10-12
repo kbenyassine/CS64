@@ -3,7 +3,7 @@
 #
 #  Data Area - allocate and initialize variables
 .data
-enter_num: .asciiz "Enter an Integer: "
+enter_num: .asciiz "Enter an integer: "
 
 #Text Area (i.e. instructions)
 .text
