@@ -25,8 +25,7 @@ main:
         li $v0 1
         move $a0 $t3
         syscall
-        li $v0 10
-        syscall
+	j exit
 
 after_print:
 	li $t6 3
@@ -35,11 +34,11 @@ after_print:
 	li $v0 1
 	move $a0 $t3
 	syscall
-	li $v0 10
-	syscall
 
 
 exit:
 	# Exit SPIM: Write your code here!
+	li $v0 10
+        syscall
 
 
